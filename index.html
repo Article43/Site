@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920px, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="alermContainer" id="buy1">
+        <div class="alertBox">
+            <img class="closeButton" onclick='document.getElementById("buy1").setAttribute("style","display:none;")'
+                src="src/Close.png" alt="" style="height: 30px; width: 30px;">
+            <div class="cartList">
+
+            </div>
+            <button class="orderButton">Оформить заказ</button>
+        </div>
+    </div>
+    <div class="alermContainer" id="buy2">
+        <div class="alertBox">
+            <img class="closeButton" onclick='document.getElementById("buy2").setAttribute("style","display:none;")'
+                src="src/Close.png" alt="" style="height: 30px; width: 30px;">
+            <form class="Order" action="" onsubmit="return false;">
+                <input class="Order__FIO" type="text" name="FIO" placeholder="ФИО" required>
+                <input class="Order__adress" type="text" name="adress" placeholder="Адрес доставки" required>
+                <input class="Order__email" type="email" name="e-mail" placeholder="E-mail" required>
+                <input class="Order__mobileNumber" type="tel" name="mobileNumber" placeholder="Номер телефона" required>
+                <input class="Order__BankNumber" type="text" name="BankNumber" placeholder="Номер карты" required>
+                <button class="Order__button" name="DoOrder">Закончить оформление</button>
+            </form>
+        </div>
+    </div>
+    <div class="alermContainer" id="addItem">
+        <div class="alertBox">
+            <img class="closeButton" onclick='document.getElementById("addItem").setAttribute("style","display:none;")'
+                src="src/Close.png" alt="" style="height: 30px; width: 30px;">
+            <form class="selectItem" action="">
+
+        </div>
+    </div>
+
+    <header>
+        <div class="border-bottom">
+            <div class="container">
+                <div class="header">
+                    <div class="header__gps">
+                        <img src="src/map.png" alt="Значек карты">
+                    </div>
+
+                    <div class="header__adress">
+                        <p>
+                            г. Кокчетав, ул. Ж. Ташенова 129Б <br> <small>(Рынок Восточный)</small>
+                        </p>
+                    </div>
+
+                    <div class="header__logo-adress">
+                        <img src="src/mail.png" alt="почта">
+                    </div>
+
+                    <div class="header__mail">
+                        <p>
+                            opt.sultan@mail.ru <br> <small>На связи в любое время</small>
+                        </p>
+                    </div>
+
+                    <div class="header__info">
+                        О компании
+                    </div>
+
+                    <div class="header__delivery">
+                        Доставка и оплата
+                    </div>
+
+                    <div class="header__refund">
+                        Возврат
+                    </div>
+                    <div class="header__contact">
+                        Контакты
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom">
+            <div class="container">
+                <div class="nav">
+                    <img class="nav__logo" src="src/logo.png" alt="" style="width:48.48px; height: 65.92px;">
+                    <div class="nav__logo-text">
+                        СУЛТАН
+                    </div>
+                    <div class="nav__shop-cart">
+                        <img src="src/ShopCart.png" alt="Корзина покупок">
+                        <div class="nav__shop-text">0</div>
+                    </div>
+                    <div class="nav__price">
+                        <small>Корзина</small> <br> 0 &#x20bd
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="border-bottom">
+            <div class="container">
+                <div class="menu">
+                    <p class="admin">Администрирование:</p>
+                    <form class="signIn" action="" onsubmit="return false;">
+                        <input class="signIn__userName" type="text" name="userName" placeholder="Логин" required>
+                        <input class="signIn__userPassword" type="password" name="userPassword" placeholder="Пароль"
+                            required>
+                        <button class="signIn__button" name="signIn">Войти</button>
+                        <img class="signIn__img" src="src/admin.png" alt=""
+                            style="height: 30px; width: 30px; margin-top: 10px;">
+                        <p class="signIn__text"> Добро пожаловать, Администратор!</p>
+                        <button class="signIn__buttonOut" name="signOut">Выйти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="catalog">
+            <div class="addProduct">
+                <p class="addProduct__addSign">
+                    +
+                </p>
+
+            </div>
+            <!-- <div class="product">
+                        <p class="product__delete">
+                            Удалить
+                        </p>
+                        <img class="product__img" src="src/ariel.png">
+                        <p class="product__name">
+                            <b>ARIEL</b> капсулы POD's все в одном Color
+                        </p>
+                        <p class="product__manufacturer">
+                            <small>Производитель: </small> Procter & Gamble
+                        </p>
+                        <p class="product__brand">
+                            <small>Бренд: </small> ARIEL
+                        </p>
+                        <p class="product__price">
+                            400 &#x20bd
+                        </p>
+                        <div class="product__buy">
+                            <p class="product__inCart">
+                                В КОРЗИНУ
+                            </p>
+                            <img class="product__cart" src="src/ShopCartWhite.png" alt="" style="object-fit: none;">
+                        </div>
+                    </div> -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__logo">
+                    <img class="logo" src="src/logo2.png" alt="" style="width:48.48px; height: 65.92px;">
+                    <div class="logo-text">
+                        СУЛТАН
+                    </div>
+
+                </div>
+                <div class="footer__menu">
+                    <p class="head">Меню сайта:</p>
+                    <p>
+
+                        О компании <br>
+                        Доставка и оплата <br>
+                        Возврат <br>
+                        Контакты
+
+                    </p>
+                </div>
+                <div class="footer__categories">
+                    <p class="head">Категории</p>
+                    <p>
+                        Бытовая химия <br>
+                        Косметика и гигиена <br>
+                        Товары для дома <br>
+                        Товары для детей и мам <br>
+                        Посуда
+                    </p>
+                </div>
+                <div class="footer__price">
+                    <p class="head">Скачать прайс-лист:</p>
+                    <p class="download">
+                        Прайс-лист <img src="src/download.png" alt="">
+                    </p>
+                </div>
+                <div class="footer__contact">
+                    <p class="head">Контакты:</p>
+                    <p>
+                        +7 (777) 490-00-91 <br>
+                        время работы: 9:00-20:00 <br>
+                        Заказать звонок <br>
+                        opt.sultan@mail.ru <br>
+                        <small>На связи в любое время</small>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
