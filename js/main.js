@@ -363,6 +363,8 @@ shopCart.onclick = function () { // Функция раскрытия диало
     document.getElementById('buy1').setAttribute('style', 'display:block;')
 }
 
+
+
 let orderButton = document.querySelector('.orderButton');
 orderButton.onclick = function () { //Функция сокрытьия/раскрытия диалоговых окон
 
@@ -415,3 +417,6 @@ closeOrder.onclick = function () { // функция отправки заказ
 
     }
 }
+
+
+

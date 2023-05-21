@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1920px, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/slayder.css">
+    <link rel="stylesheet" href="style/media.css">
     <title>Document</title>
 </head>
 
@@ -55,7 +57,7 @@
 
                     <div class="header__adress">
                         <p>
-                            г. Кокчетав, ул. Ж. Ташенова 129Б <br> <small>(Рынок Восточный)</small>
+                            г. Барнаул, ул. Комсомольский 100 <br> <small>(Центральный район)</small>
                         </p>
                     </div>
 
@@ -69,20 +71,27 @@
                         </p>
                     </div>
 
-                    <div class="header__info">
+
+                    <a href="#part1" class="header__info">О компании</a>
+                    <a href="#part5" class="header__refund">Акции</a>
+                    <a href="#part2" class="header__delivery">Товары</a>
+                    <a href="#part3" class="header__contact">Контакты</a>
+                    <a href="#part3" class="header__vhod">Вход</a>
+
+                    <!--<div class="header__info" href="vk.com">
                         О компании
                     </div>
 
-                    <div class="header__delivery">
+                    <div class="header__delivery" href="#">
                         Доставка и оплата
                     </div>
 
-                    <div class="header__refund">
+                    <div class="header__refund" href="#">
                         Возврат
                     </div>
-                    <div class="header__contact">
+                    <div class="header__contact" href="#">
                         Контакты
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -126,85 +135,318 @@
         </div>
 
 
-        <div class="catalog">
-            <div class="addProduct">
-                <p class="addProduct__addSign">
-                    +
-                </p>
-
+<div class="containers">
+    <div class="intro__content">
+            <div class="intro__block">
+                    <h1 class="intro__title">
+                        CУЛТАН - ОПТОВЫЙ РЫНОК ДЛЯ ВСЕХ СЛУЧАЕВ ЖИЗНИ !
+                    </h1>
+                    <a href="#" class="btn">
+                        Подробнее
+                    </a>
             </div>
-            <!-- <div class="product">
-                        <p class="product__delete">
-                            Удалить
-                        </p>
-                        <img class="product__img" src="src/ariel.png">
-                        <p class="product__name">
-                            <b>ARIEL</b> капсулы POD's все в одном Color
-                        </p>
-                        <p class="product__manufacturer">
-                            <small>Производитель: </small> Procter & Gamble
-                        </p>
-                        <p class="product__brand">
-                            <small>Бренд: </small> ARIEL
-                        </p>
-                        <p class="product__price">
-                            400 &#x20bd
-                        </p>
-                        <div class="product__buy">
-                            <p class="product__inCart">
-                                В КОРЗИНУ
-                            </p>
-                            <img class="product__cart" src="src/ShopCartWhite.png" alt="" style="object-fit: none;">
-                        </div>
-                    </div> -->
-        </div>
+        <div class="intro__rab"></div>
     </div>
+</div>
 
-    <footer>
-        <div class="container">
-            <div class="footer">
-                <div class="footer__logo">
-                    <img class="logo" src="src/logo2.png" alt="" style="width:48.48px; height: 65.92px;">
-                    <div class="logo-text">
-                        СУЛТАН
+
+
+
+
+    <section class="info">
+        <div class="containers" id="part1">
+            <div class="wrapper">
+                <div class="block">
+                    <div class="info__item">
+                        <div class="info__img">
+                            <img src="src/phone.svg" alt="">
+                        </div>
+                        <h4 class="info__title">
+                            ПОЗВОНИТЕ НАМ
+                        </h4>
+                        <p class="info__text">
+                            Проконсультируем и подскажем
+                        </p>
+                    </div>
+                </div>
+                <!--/info__block-->
+                <div class="block">
+                    <div class="info__item">
+                        <div class="info__img">
+                            <img src="src/calendar.svg" alt="">
+                        </div>
+                        <h4 class="info__title">
+                            ДОСТАВЛЯЕМ ВОВРЕМЯ
+                        </h4>
+                        <p class="info__text">
+                            Мы успеваем в дату!
+                        </p>
+                    </div>
+                </div>
+                <!--/info__block-->
+                <div class="block">
+                    <div class="info__item">
+                        <div class="info__img">
+                            <img src="src/pin.svg" alt="">
+                        </div>
+                        <h4 class="info__title">
+                            РАБОТАЕМ В ЦЕНТРЕ
+                        </h4>
+                        <p class="info__text">
+                            Система заказов
+                        </p>
+                    </div>
+                </div>
+                <!--/info__block-->
+            </div>
+            <!--/info__wrapper-->
+        </div>
+        <!--/container-->
+    </section>
+    <!--/info-->
+
+
+
+
+
+
+<!-- Wedo -->
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h2 class="section__title">Оптовый рынок бытовой химии</h2>
+            <div class="section__text">
+                <p>В нашем магазине вы найдете различную продукцию, для своего магазина.</p>
+            </div>
+        </div>
+
+        <div class="wedo">
+            <div class="wedo__item">
+                <img class="wedo__img" src="src/wedo.jpg" alt="">
+            </div>
+
+            <div class="wedo__item">
+
+                <div class="accordion">
+                    <div class="accordion__item active">
+                        <div class="accordion__header">
+                            <img class="accordion__icon" src="src/history.png" alt="">
+                            <div class="accordion__title">История</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_1">
+                            <p>Компания Султан является производителем товаров народного потребления и крупнейшим оператором по снабжению предприятий товарами первой необходимости.
+
+                                Компания осуществляет свою деятельность с 2010 года, охватывая все большее количество клиентских отраслей и предлагая инновационные решения.
+                                
+                                Нашими партнёрами являются сетевые и традиционные розничные магазины, предприятия государственного сектора, крупные организации - бары, кафе, сетевые рестораны, казино, ночные клубы; организации медицинского и санитарно-курортного назначения; различные детские и образовательные учреждения; заводы, фабрики и предприятия сферы производственной деятельности.
+                                
+                                Представленный на сайте ассортимент насчитывает более 5 000 наименований и он постоянно обновляется и растёт. Мы поставляем расходные материалы, одноразовую посуду, посуду из стекла и керамики, канцелярские товары, профессиональную и бытовую химию, уборочный инвентарь, как российского, так и зарубежного производства.
+                                
+                                Наша цель — предоставить максимальное количество товаров и услуг предприятию независимо от масштаба и сферы его деятельности. <br>
+                                
+                            </p>
+                        </div>
                     </div>
 
-                </div>
-                <div class="footer__menu">
-                    <p class="head">Меню сайта:</p>
-                    <p>
+                </div><!-- /.accordion -->
 
-                        О компании <br>
-                        Доставка и оплата <br>
-                        Возврат <br>
-                        Контакты
+            </div><!-- /.wedo__item -->
+        </div><!-- /.wedo -->
 
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <section class="section about" id="part5">
+        <div class="containers">
+            <div class="about__wrapper">
+                <div class="about__block">
+                    <h2 class="block__title text-white">
+                        АКЦИИ В ОПТОВОМ МАГАЗИНЕ СУЛТАН
+                    </h2>
+                    <p class="about__text">
+                        КАЖДУЮ НЕДЕЛЮ У НАС В МАГАЗИНЕ АКЦИИ НА РАЗЛИЧНЫЕ ТОВАРЫ <br>
+                        УСПЕЙТЕ КУПИТЬ ПО ВЫГОДНОЙ ЦЕНЕ !
                     </p>
+                    <a href="#" class="about__link" id="buy3" alt="Корзина покупок">
+                        Заказать
+                    </a>
                 </div>
-                <div class="footer__categories">
-                    <p class="head">Категории</p>
+                <!--/about__block-->
+                <div class="all">
+                    <input checked type="radio" name="respond" id="desktop">
+                        <article id="slider">
+                                <input checked type="radio" name="slider" id="switch1">
+                                <input type="radio" name="slider" id="switch2">
+                                <input type="radio" name="slider" id="switch3">
+                                <input type="radio" name="slider" id="switch4">
+                                <input type="radio" name="slider" id="switch5">
+                            <div id="slides">
+                                <div id="overflow">
+                                    <div class="image">
+                                        <article><img src="src/about.jpg"></article>
+                                        <article><img src="src/about.jpg"></article>
+                                        <article><img src="src/about.jpg"></article>
+                                        <article><img src="src/about.jpg"></article>
+                                        <article><img src="src/about.jpg"></article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="controls">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                                <label for="switch5"></label>
+                            </div>
+                            <div id="active">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                                <label for="switch5"></label>
+                            </div>
+                        </article>
+                </div>
+                <!-- <img src="img/about_img.jpg" alt="" class="about__img"> -->
+            </div>
+            <!--/about__wrapper-->
+        </div>
+        <!--/container-->
+    </section>
+
+
+
+
+
+
+
+
+
+
+<div class="containers" id="part2">
+    <div class="catalog">
+        <div class="addProduct">
+            <p class="addProduct__addSign">
+                +
+            </p>   
+        </div>
+    </div>
+</div>
+
+
+
+<section class="contacts" id="part3">
+    <div class="container">
+        <h2 class="block__title text-white">
+            Связь с нами
+        </h2>
+        <form class="contacts__form" action="">
+            <div class="form__row">
+                <div class="form__group">
+                    <input type="text" class="input"  placeholder=" ">
+                    <label for="" class="label">
+                        Имя
+                    </label>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="input" placeholder=" ">
+                    <label for="" class="label">
+                        Фамилия
+                    </label>
+                </div>
+            </div>
+            <!--/form__row-->
+            <div class="form__row">
+                <div class="form__group">
+                    <input type="email" class="input" placeholder=" ">
+                    <label for="" class="label">
+                        Email
+                    </label>
+                </div>
+                <div class="form__group">
+                    <input type="tel" class="input" placeholder=" ">
+                    <label for="" class="label">
+                        Телефон
+                    </label>
+                </div>
+            </div>
+            <!--/form__row-->
+            <div class="form__row">
+                <div class="form__group">
+                    <textarea class="textarea" placeholder=" " name=""></textarea>
+                    <label for="" class="label">
+                        Сообщение
+                    </label>
+                </div>
+            </div>
+            <!--/form__row-->
+            <button class="btn text-upper" type="submit">
+                Отправить
+            </button>
+            <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9f51b97e827387316a066271d257ecec51b7a19e6bd1cad6817c998158d3a249&amp;width=700&amp;height=440&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </form>
+        <!--/contact__form-->
+    </div>
+    <!--/container-->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <footer>
+        <div class="containerf">
+            <div class="footer">
+                <div class="footer__logo">
+                    <img class="logo" src="src/logo.png" alt="" style="width: 72px;; height: 72px;">
+
+                </div>
+                <div class="footer__menus">
+                    <p class="head">Меню сайта</p>
                     <p>
-                        Бытовая химия <br>
-                        Косметика и гигиена <br>
-                        Товары для дома <br>
-                        Товары для детей и мам <br>
-                        Посуда
+
+                        <a class='footer__menu' href="#part1">О компании</a> <br>
+                        <a class='footer__menu' href="#part2">Товары</a> <br>
+                        <a class='footer__menu' href="#part5">Акции </a> <br>
+                        <a class='footer__menu' href="#part3">Контакты</a>
+
                     </p>
                 </div>
                 <div class="footer__price">
-                    <p class="head">Скачать прайс-лист:</p>
-                    <p class="download">
-                        Прайс-лист <img src="src/download.png" alt="">
-                    </p>
+                    <p class="head">Прайс-лист</p>
+                       <a class="download" href="price.docx">Скачать </a>   
                 </div>
                 <div class="footer__contact">
                     <p class="head">Контакты:</p>
-                    <p>
-                        +7 (777) 490-00-91 <br>
-                        время работы: 9:00-20:00 <br>
+                    <p class="head">
+                        +7 (913) 090-02-43 <br>
+                        время работы: 9:00-18:00 <br>
                         Заказать звонок <br>
-                        opt.sultan@mail.ru <br>
-                        <small>На связи в любое время</small>
+                        food-drink@mail.ru
+                        
                     </p>
                 </div>
 
@@ -212,7 +454,10 @@
 
         </div>
     </footer>
-    <script src="main.js"></script>
+</div>
+    <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
