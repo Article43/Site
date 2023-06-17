@@ -240,21 +240,23 @@ window.onload = function () { // Функция заполнения катал�
 
 
 
-let signInButton = document.querySelector('.signIn__button');
-let signOut = document.querySelector('.signIn__buttonOut')
+let signInButton = document.querySelector('.SignIn__button');
+let signOut = document.querySelector('.header__signOut')
+let signIn = document.querySelector('.header__signIn')
 
 
 signInButton.onclick = function () { // Функция для входа в админку
 
-    let login = document.querySelector('.signIn__userName');
-    let password = document.querySelector('.signIn__userPassword');
+    let login = document.querySelector('.login');
+    let password = document.querySelector('.password');
     if (login.reportValidity() && password.reportValidity()) {
         if (login.value == 'Admin123' && password.value == 'Admin123') {
 
             document.querySelector('.signIn__img').setAttribute('style', 'display: block; height: 30px; width: 30px; margin-top: 10px;');
-            login.setAttribute('style', 'display: none;');
-            password.setAttribute('style', 'display: none;');
-            signInButton.setAttribute('style', 'display: none;');
+            signOut.setAttribute('style', 'display: block;');
+            signIn.setAttribute('style', 'display: none;');
+            popupBg.classList.remove('active');
+            popup.classList.remove('active');
 
             let deleteProd = document.querySelectorAll('.product__delete');
             for (let elem of deleteProd) {
@@ -262,9 +264,7 @@ signInButton.onclick = function () { // Функция для входа в ад
             }
 
             document.querySelector('.addProduct').setAttribute('style', 'display: flex;');
-            document.querySelector('.admin').setAttribute('style', 'display: none;');
             document.querySelector('.signIn__text').setAttribute('style', 'display: block;');
-            signOut.setAttribute('style', 'display: block;');
 
             return false;
         }
@@ -288,13 +288,10 @@ signInButton.onclick = function () { // Функция для входа в ад
 
 signOut.onclick = function () { // Функция для выхода из админки
 
-    let login = document.querySelector('.signIn__userName');
-    let password = document.querySelector('.signIn__userPassword');
 
     document.querySelector('.signIn__img').setAttribute('style', 'display: none;');
-    login.setAttribute('style', 'display: block;');
-    password.setAttribute('style', 'display: block;');
-    signInButton.setAttribute('style', 'display: block;');
+    signIn.setAttribute('style', 'display: block;');
+    signOut.setAttribute('style', 'display: none;')
 
     let deleteProd = document.querySelectorAll('.product__delete');
     for (let elem of deleteProd) {
@@ -302,7 +299,6 @@ signOut.onclick = function () { // Функция для выхода из ад�
     }
 
     document.querySelector('.addProduct').setAttribute('style', 'display: none;');
-    document.querySelector('.admin').setAttribute('style', 'display: block;');
     document.querySelector('.signIn__text').setAttribute('style', 'display: none;');
     signOut.setAttribute('style', 'display: none;');
 
@@ -363,6 +359,8 @@ shopCart.onclick = function () { // Функция раскрытия диало
     document.getElementById('buy1').setAttribute('style', 'display:block;')
 }
 
+
+
 let orderButton = document.querySelector('.orderButton');
 orderButton.onclick = function () { //Функция сокрытьия/раскрытия диалоговых окон
 
@@ -415,3 +413,6 @@ closeOrder.onclick = function () { // функция отправки заказ
 
     }
 }
+
+
+
